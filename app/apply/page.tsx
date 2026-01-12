@@ -3,6 +3,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ApplyForm from '@/components/ApplyForm'
+import Map from '@/components/Map'
 import styles from './apply.module.css'
 
 export default function ApplyPage() {
@@ -69,6 +70,12 @@ export default function ApplyPage() {
                 <p>Entry-level position assisting stylists and providing excellent client care. Great opportunity to learn and grow.</p>
               </div>
             </div>
+          </div>
+
+          <div className={styles.locationSection}>
+            <h3>Our Location</h3>
+            <p>108 Old Solomons Island Rd #L1, Annapolis, MD 21401</p>
+            <Map className={styles.map} />
           </div>
 
           <ApplyForm />

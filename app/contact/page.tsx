@@ -3,6 +3,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
+import Map from '@/components/Map'
 import styles from './contact.module.css'
 
 export default function ContactPage() {
@@ -17,6 +18,15 @@ export default function ContactPage() {
           </p>
         </div>
         <Contact />
+        <section className={styles.mapSection}>
+          <div className={styles.container}>
+            <h2 className={styles.mapTitle}>Visit Us</h2>
+            <p className={styles.mapSubtitle}>
+              108 Old Solomons Island Rd #L1, Annapolis, MD 21401
+            </p>
+            <Map />
+          </div>
+        </section>
       </main>
       <Footer />
     </>

@@ -21,6 +21,30 @@
   font-weight: 300;
 }
 
+.mapSection {
+  padding: 4rem 2rem;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mapTitle {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.mapSubtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
 @media (max-width: 768px) {
   .contactPage {
     padding-top: 60px;
@@ -28,5 +52,9 @@
 
   .hero {
     padding: 3rem 1.5rem 2rem;
+  }
+
+  .mapSection {
+    padding: 3rem 1.5rem;
   }
 }
