@@ -1,11 +1,8 @@
+'use client'
+
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import styles from './team.module.css'
-
-export const metadata = {
-  title: 'Meet Our Team | JesseRai Salon',
-  description: 'Meet the talented professionals at JesseRai Salon in Annapolis, MD. Our experienced team is dedicated to making you look and feel your best.',
-}
 
 const teamMembers = [
   {

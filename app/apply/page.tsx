@@ -1,12 +1,9 @@
+'use client'
+
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ApplyForm from '@/components/ApplyForm'
 import styles from './apply.module.css'
-
-export const metadata = {
-  title: 'Join Our Team | JesseRai Salon',
-  description: 'Join the JesseRai team. We are looking for passionate, talented stylists and nail technicians to join our growing salon in Annapolis, MD.',
-}
 
 export default function ApplyPage() {
   return (

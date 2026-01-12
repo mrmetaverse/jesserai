@@ -1,10 +1,16 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useTheme } from '@/app/context/ThemeContext'
 import styles from './LogoComparison.module.css'
 
 export default function LogoComparison() {
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <section className={styles.comparison}>
@@ -19,11 +25,13 @@ export default function LogoComparison() {
             <div className={styles.preview}>
               <div className={styles.logoBox}>
                 <img src="/examplelogo1.png" alt="Logo 1 (Current)" />
-                <img 
-                  src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
-                  alt="JesseRai" 
-                  className={styles.logoText}
-                />
+                {mounted && (
+                  <img 
+                    src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
+                    alt="JesseRai" 
+                    className={styles.logoText}
+                  />
+                )}
               </div>
             </div>
             <p className={styles.label}>Logo 1 (Current)</p>
@@ -34,11 +42,13 @@ export default function LogoComparison() {
             <div className={styles.preview}>
               <div className={styles.logoBox}>
                 <img src="/examplelogo2.png" alt="Logo Option 2" />
-                <img 
-                  src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
-                  alt="JesseRai" 
-                  className={styles.logoText}
-                />
+                {mounted && (
+                  <img 
+                    src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
+                    alt="JesseRai" 
+                    className={styles.logoText}
+                  />
+                )}
               </div>
             </div>
             <p className={styles.label}>Logo 2 (Alternative)</p>

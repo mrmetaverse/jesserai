@@ -8,9 +8,11 @@ import styles from './Navigation.module.css'
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
 
   useEffect(() => {
+    setMounted(true)
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
@@ -26,7 +28,7 @@ export default function Navigation() {
     }
   }
 
-  const logoTextSrc = theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
+  const logoTextSrc = mounted && theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
 
   return (
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>

@@ -1,12 +1,19 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { useTheme } from '@/app/context/ThemeContext'
 import styles from './Footer.module.css'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
-  const logoTextSrc = theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const logoTextSrc = mounted && theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
 
   return (
     <footer className={styles.footer}>
