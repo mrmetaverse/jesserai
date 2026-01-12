@@ -34,6 +34,12 @@ export default function Home() {
                 <span className={styles.arrow}>→</span>
               </Link>
               
+              <Link href="/photos" className={styles.linkCard}>
+                <h3>Client Gallery</h3>
+                <p>See our work and share yours with #jesseraisalon for $5 off</p>
+                <span className={styles.arrow}>→</span>
+              </Link>
+              
               <Link href="/about" className={styles.linkCard}>
                 <h3>About Us</h3>
                 <p>Learn more about our salon and our story</p>

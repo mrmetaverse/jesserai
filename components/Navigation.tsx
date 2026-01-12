@@ -65,6 +65,11 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
+            <Link href="/photos">
+              Gallery
+            </Link>
+          </li>
+          <li>
             <Link href="/about">
               About
             </Link>
@@ -72,11 +77,6 @@ export default function Navigation() {
           <li>
             <Link href="/team">
               Our Team
-            </Link>
-          </li>
-          <li>
-            <Link href="/apply">
-              Apply Now
             </Link>
           </li>
           <li>
