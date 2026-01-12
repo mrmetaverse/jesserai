@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   pointer-events: auto;
+  padding: 12px;
 }
 
 [data-theme='dark'] .chatButton {
@@ -30,6 +31,18 @@
 
 .chatButton.open {
   background-color: var(--color-lavender);
+}
+
+.logoIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.closeIcon {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .chatWindow {

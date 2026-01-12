@@ -33,10 +33,10 @@ const primaryLinks = [
 ]
 
 const secondaryLinks = [
-  { href: '/about', icon: '🏠', title: 'About', description: 'Our story' },
-  { href: '/team', icon: '👥', title: 'Our Team', description: 'Meet our stylists' },
-  { href: '/apply', icon: '💼', title: 'Careers', description: 'Join us' },
-  { href: '/contact', icon: '📞', title: 'Contact', description: 'Get in touch' },
+  { href: '/about', icon: '◆', title: 'About', description: 'Our story' },
+  { href: '/team', icon: '◇', title: 'Our Team', description: 'Meet our stylists' },
+  { href: '/apply', icon: '◈', title: 'Careers', description: 'Join us' },
+  { href: '/contact', icon: '◉', title: 'Contact', description: 'Get in touch' },
 ]
 
 export default function Home() {

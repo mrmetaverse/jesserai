@@ -73,7 +73,11 @@ export default function Chatbot() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle chat"
       >
-        {isOpen ? '✕' : '✂️'}
+        {isOpen ? (
+          <span className={styles.closeIcon}>✕</span>
+        ) : (
+          <img src="/examplelogo1.png" alt="Chat" className={styles.logoIcon} />
+        )}
       </button>
 
       {/* Chat Window */}
