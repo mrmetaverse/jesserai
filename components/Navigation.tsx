@@ -33,13 +33,13 @@ export default function Navigation() {
   return (
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <button 
-          onClick={() => scrollToSection('home')}
+        <a 
+          href="/"
           className={styles.logo}
           aria-label="JesseRai Salon Home"
         >
           <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
-        </button>
+        </a>
 
         <button 
           className={styles.mobileMenuButton}
@@ -54,9 +54,9 @@ export default function Navigation() {
 
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.open : ''}`}>
           <li>
-            <button onClick={() => scrollToSection('services')}>
+            <a href="/services">
               Services
-            </button>
+            </a>
           </li>
           <li>
             <a href="/bookings">
@@ -64,9 +64,9 @@ export default function Navigation() {
             </a>
           </li>
           <li>
-            <button onClick={() => scrollToSection('about')}>
+            <a href="/about">
               About
-            </button>
+            </a>
           </li>
           <li>
             <a href="/team">
@@ -79,9 +79,9 @@ export default function Navigation() {
             </a>
           </li>
           <li>
-            <button onClick={() => scrollToSection('contact')}>
+            <a href="/contact">
               Contact
-            </button>
+            </a>
           </li>
           <li>
             <ThemeToggle />

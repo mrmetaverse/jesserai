@@ -5,8 +5,41 @@
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.ownerSection {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.ownerImage {
+  width: 100%;
+}
+
+.ownerImage img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.ownerInfo h2 {
+  margin-bottom: 0.5rem;
+}
+
+.ownerTitle {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.ownerInfo p {
+  color: var(--text-secondary);
+  line-height: 1.8;
 }
 
 .content {
@@ -55,6 +88,22 @@
   color: var(--accent);
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+@media (max-width: 968px) {
+  .ownerSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ownerImage {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .ownerInfo {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {

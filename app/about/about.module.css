@@ -1,0 +1,32 @@
+.aboutPage {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, rgba(114, 110, 151, 0.08) 100%);
+  transition: background 0.3s ease;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .aboutPage {
+    padding-top: 60px;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+}

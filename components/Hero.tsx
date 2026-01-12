@@ -40,7 +40,7 @@ export default function Hero() {
         <p className={styles.description}>
           High-quality styling and exceptional service at prices that work for our local community
         </p>
-        <a href="#contact" className={styles.cta}>
+        <a href="/bookings" className={styles.cta}>
           Book Your Appointment
         </a>
       </div>

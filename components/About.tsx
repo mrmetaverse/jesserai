@@ -4,8 +4,21 @@ export default function About() {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
+        <div className={styles.ownerSection}>
+          <div className={styles.ownerImage}>
+            <img src="/jesse.jpg" alt="Jessica Angell" />
+          </div>
+          <div className={styles.ownerInfo}>
+            <h2 className={styles.title}>Meet Jessica Angell</h2>
+            <h3 className={styles.ownerTitle}>Owner & Master Stylist</h3>
+            <p>
+              With years of experience and a passion for the art of hair, Jessica founded 
+              JesseRai to bring high-quality, affordable salon services to the Annapolis community.
+            </p>
+          </div>
+        </div>
+
         <div className={styles.content}>
-          <h2 className={styles.title}>About JesseRai</h2>
           <div className={styles.text}>
             <p>
               Located in the heart of Annapolis, JesseRai brings a fresh approach to hair care. 

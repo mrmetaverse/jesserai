@@ -1,0 +1,100 @@
+.pressPage {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, rgba(114, 110, 151, 0.08) 100%);
+  transition: background 0.3s ease;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background-color: rgba(114, 110, 151, 0.08);
+  border-left: 3px solid var(--accent);
+}
+
+.intro p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.section p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .pressPage {
+    padding-top: 60px;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+  }
+
+  .socialLink {
+    text-align: center;
+  }
+}

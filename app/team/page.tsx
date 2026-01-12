@@ -10,6 +10,7 @@ const teamMembers = [
     title: 'Owner & Master Stylist',
     bio: 'With years of experience and a passion for the art of hair, Jessica founded JesseRai to bring high-quality, affordable salon services to the Annapolis community. Her expertise spans cutting-edge color techniques, precision cuts, and creating personalized looks that enhance each client\'s natural beauty. Jessica believes that everyone deserves to feel confident and beautiful, and she has built JesseRai on the foundation of exceptional service, artistry, and genuine care for every guest who walks through our doors.',
     specialties: ['Color Specialist', 'Precision Cuts', 'Balayage Expert', 'Bridal Styling'],
+    image: '/jesse.jpg',
   },
 ]
 
@@ -38,9 +39,13 @@ export default function TeamPage() {
             {teamMembers.map((member, index) => (
               <div key={index} className={styles.memberCard}>
                 <div className={styles.memberImage}>
-                  <div className={styles.imagePlaceholder}>
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+                  {member.image ? (
+                    <img src={member.image} alt={member.name} className={styles.photo} />
+                  ) : (
+                    <div className={styles.imagePlaceholder}>
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </div>
+                  )}
                 </div>
                 <div className={styles.memberInfo}>
                   <h2>{member.name}</h2>
