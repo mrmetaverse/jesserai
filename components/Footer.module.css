@@ -103,6 +103,16 @@
   opacity: 0.5;
 }
 
+.credit a {
+  color: currentColor;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.credit a:hover {
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1.5rem 1.5rem;

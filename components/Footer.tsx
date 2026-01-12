@@ -59,7 +59,16 @@ export default function Footer() {
         <div className={styles.copyright}>
           <p>&copy; {currentYear} JesseRai Salon. All rights reserved.</p>
           <p>Owner: Jessica Angell</p>
-          <p className={styles.credit}>Made with love by Jesse Alton @ Virgent AI</p>
+          <p className={styles.credit}>
+            Made with 💜 by{' '}
+            <a href="https://alton.tech" target="_blank" rel="noopener noreferrer">
+              Jesse Alton
+            </a>
+            {' '}@{' '}
+            <a href="https://virgent.ai/" target="_blank" rel="noopener noreferrer">
+              Virgent AI
+            </a>
+          </p>
         </div>
       </div>
     </footer>
