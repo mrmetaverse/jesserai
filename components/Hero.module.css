@@ -7,13 +7,54 @@
   text-align: center;
   padding: 2rem;
   position: relative;
-  background: linear-gradient(135deg, var(--color-white) 0%, rgba(114, 110, 151, 0.08) 100%);
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: blur(1px);
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(242, 235, 223, 0.85) 0%,
+    rgba(242, 235, 223, 0.75) 50%,
+    rgba(114, 110, 151, 0.15) 100%
+  );
+  z-index: 1;
 }
 
 .content {
   max-width: 900px;
   margin: 0 auto;
   animation: fadeInUp 1s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
 .subtitle {
@@ -76,6 +117,7 @@
   border: 2px solid var(--color-black);
   border-radius: 20px;
   opacity: 0.6;
+  z-index: 2;
 }
 
 .scrollIndicator span {
