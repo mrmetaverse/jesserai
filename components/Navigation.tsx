@@ -38,7 +38,6 @@ export default function Navigation() {
           className={styles.logo}
           aria-label="JesseRai Salon Home"
         >
-          <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.logoImage} />
           <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
         </button>
 

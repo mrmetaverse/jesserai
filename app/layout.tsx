@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   title: 'JesseRai Salon | Premium Hair Salon in Annapolis, MD',
   description: 'High-quality, affordable hair salon in Annapolis, Maryland. Expert styling, coloring, and hair care services by Jessica Angell and team.',
   keywords: 'hair salon, Annapolis, Maryland, hair styling, hair coloring, Jessica Angell, JesseRai',
+  icons: {
+    icon: '/examplelogo1.png',
+    apple: '/examplelogo1.png',
+  },
 }
 
 export default function RootLayout({

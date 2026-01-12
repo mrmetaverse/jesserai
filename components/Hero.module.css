@@ -82,15 +82,9 @@
   animation: fadeIn 0.8s ease-out 0.3s forwards;
 }
 
-.heroLogo {
-  height: clamp(80px, 12vw, 140px);
-  width: auto;
-}
-
 .heroLogoText {
-  height: clamp(50px, 8vw, 90px);
+  height: clamp(60px, 10vw, 120px);
   width: auto;
-  margin-top: 1rem;
 }
 
 .tagline {

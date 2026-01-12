@@ -32,7 +32,6 @@ export default function Hero() {
       <div className={styles.content}>
         <h2 className={styles.subtitle}>Welcome to</h2>
         <div className={styles.logoContainer}>
-          <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.heroLogo} />
           <img src={logoTextSrc} alt="JesseRai" className={styles.heroLogoText} />
         </div>
         <p className={styles.tagline}>

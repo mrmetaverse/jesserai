@@ -15,7 +15,7 @@ export default function LogoComparison() {
   return (
     <section className={styles.comparison}>
       <div className={styles.container}>
-        <h3 className={styles.title}>Logo Option for Review</h3>
+        <h3 className={styles.title}>Logo Options for Review</h3>
         <p className={styles.note}>
           We are currently using Logo 1 throughout the site. Here is Logo 2 as an alternative option for your consideration.
         </p>
@@ -24,7 +24,7 @@ export default function LogoComparison() {
           <div className={styles.option}>
             <div className={styles.preview}>
               <div className={styles.logoBox}>
-                <img src="/examplelogo1.png" alt="Logo 1 (Current)" />
+                <img src="/examplelogo1.png" alt="Logo 1 Icon" className={styles.logoIcon} />
                 {mounted && (
                   <img 
                     src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
@@ -35,16 +35,16 @@ export default function LogoComparison() {
               </div>
             </div>
             <p className={styles.label}>Logo 1 (Current)</p>
-            <p className={styles.usage}>Used throughout the site</p>
+            <p className={styles.usage}>Icon + Text - Used throughout site</p>
           </div>
 
           <div className={styles.option}>
             <div className={styles.preview}>
               <div className={styles.logoBox}>
-                <img src="/examplelogo2.png" alt="Logo Option 2" />
+                <img src="/examplelogo2.png" alt="Logo 2 Icon" className={styles.logoIcon} />
                 {mounted && (
                   <img 
-                    src={theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'} 
+                    src="/examplelogotextwhite2.png"
                     alt="JesseRai" 
                     className={styles.logoText}
                   />
@@ -52,7 +52,7 @@ export default function LogoComparison() {
               </div>
             </div>
             <p className={styles.label}>Logo 2 (Alternative)</p>
-            <p className={styles.usage}>Available option</p>
+            <p className={styles.usage}>Icon + Text - Available option</p>
           </div>
         </div>
       </div>
