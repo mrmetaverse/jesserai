@@ -21,10 +21,16 @@
   font-weight: 300;
 }
 
-.mapSection {
+.formSection {
   padding: 4rem 2rem;
   background-color: var(--bg-primary);
   transition: background-color 0.3s ease;
+}
+
+.mapSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(114, 110, 151, 0.05) 100%);
+  transition: background 0.3s ease;
 }
 
 .container {

@@ -90,6 +90,41 @@
   font-size: 1.25rem;
 }
 
+.ctaLinks {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.ctaLinks h4 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.linkGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ctaLink {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ctaLink:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 968px) {
   .ownerSection {
     grid-template-columns: 1fr;

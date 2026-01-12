@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Contact.module.css'
 
 export default function Contact() {
@@ -48,6 +49,21 @@ export default function Contact() {
           <a href="tel:410555-4247" className={styles.phoneButton}>
             (410) 555-HAIR
           </a>
+        </div>
+
+        <div className={styles.quickLinks}>
+          <h4>Quick Links</h4>
+          <div className={styles.linkGrid}>
+            <Link href="/bookings" className={styles.quickLink}>
+              📅 Book Online
+            </Link>
+            <Link href="/team" className={styles.quickLink}>
+              👥 Meet Our Team
+            </Link>
+            <Link href="/apply" className={styles.quickLink}>
+              💼 Join Our Team
+            </Link>
+          </div>
         </div>
       </div>
     </section>

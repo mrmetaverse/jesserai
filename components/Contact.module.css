@@ -102,6 +102,40 @@
   box-shadow: 0 10px 25px rgba(242, 235, 223, 0.2);
 }
 
+.quickLinks {
+  text-align: center;
+  padding: 2rem 2rem 0;
+  border-top: 1px solid rgba(242, 235, 223, 0.2);
+  margin-top: 3rem;
+}
+
+.quickLinks h4 {
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+}
+
+.linkGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.quickLink {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(242, 235, 223, 0.1);
+  border: 1px solid rgba(242, 235, 223, 0.2);
+  color: var(--color-white);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.quickLink:hover {
+  background-color: var(--color-lavender);
+  border-color: var(--color-lavender);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .contact {
     padding: 4rem 1.5rem;
@@ -118,5 +152,18 @@
 
   .ctaSection {
     padding: 2rem 1rem;
+  }
+
+  .quickLinks {
+    padding: 2rem 1rem 0;
+  }
+
+  .linkGrid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quickLink {
+    text-align: center;
   }
 }

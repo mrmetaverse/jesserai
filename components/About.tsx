@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './About.module.css'
 
 export default function About() {
@@ -43,6 +44,21 @@ export default function About() {
               <li>Personalized consultations</li>
               <li>Welcoming, relaxing atmosphere</li>
             </ul>
+          </div>
+
+          <div className={styles.ctaLinks}>
+            <h4>Learn More</h4>
+            <div className={styles.linkGrid}>
+              <Link href="/team" className={styles.ctaLink}>
+                👥 Meet Our Team
+              </Link>
+              <Link href="/apply" className={styles.ctaLink}>
+                💼 Join Our Team
+              </Link>
+              <Link href="/contact" className={styles.ctaLink}>
+                📞 Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </div>

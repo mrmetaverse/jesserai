@@ -3,6 +3,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
+import ContactForm from '@/components/ContactForm'
 import Map from '@/components/Map'
 import styles from './contact.module.css'
 
@@ -18,6 +19,11 @@ export default function ContactPage() {
           </p>
         </div>
         <Contact />
+        <section className={styles.formSection}>
+          <div className={styles.container}>
+            <ContactForm />
+          </div>
+        </section>
         <section className={styles.mapSection}>
           <div className={styles.container}>
             <h2 className={styles.mapTitle}>Visit Us</h2>

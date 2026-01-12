@@ -50,21 +50,17 @@
   padding: 0;
 }
 
-.navLinks button,
-.navLinks a {
+.navLink {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-primary);
   transition: color 0.3s ease;
   padding: 0.5rem 0;
   position: relative;
-  background: none;
-  border: none;
-  cursor: pointer;
+  display: block;
 }
 
-.navLinks button::after,
-.navLinks a::after {
+.navLink::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -75,18 +71,75 @@
   transition: width 0.3s ease;
 }
 
-.navLinks button:hover,
-.navLinks a:hover {
+.navLink:hover {
   color: var(--accent);
 }
 
-.navLinks button:hover::after,
-.navLinks a:hover::after {
+.navLink:hover::after {
   width: 100%;
 }
 
-.navLinks li:last-child button::after {
-  display: none;
+.bookNowButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bg-primary);
+  background: linear-gradient(
+    45deg,
+    var(--color-lavender),
+    var(--color-fern),
+    var(--color-apricot),
+    var(--color-lavender)
+  );
+  background-size: 300% 300%;
+  animation: lavaLamp 6s ease infinite;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.bookNowButton::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+.bookNowButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(114, 110, 151, 0.4);
+}
+
+@keyframes lavaLamp {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
 }
 
 .mobileMenuButton {

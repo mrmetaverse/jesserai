@@ -55,37 +55,42 @@ export default function Navigation() {
 
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.open : ''}`}>
           <li>
-            <Link href="/services">
+            <Link href="/services" className={styles.navLink}>
               Services
             </Link>
           </li>
           <li>
-            <Link href="/bookings">
-              Book Now
-            </Link>
-          </li>
-          <li>
-            <Link href="/photos">
+            <Link href="/photos" className={styles.navLink}>
               Gallery
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/about" className={styles.navLink}>
               About
             </Link>
           </li>
           <li>
-            <Link href="/team">
+            <Link href="/team" className={styles.navLink}>
               Our Team
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="/apply" className={styles.navLink}>
+              Apply Now
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className={styles.navLink}>
               Contact
             </Link>
           </li>
           <li>
             <ThemeToggle />
+          </li>
+          <li>
+            <Link href="/bookings" className={styles.bookNowButton}>
+              Book Now
+            </Link>
           </li>
         </ul>
       </div>
