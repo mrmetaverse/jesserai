@@ -14,6 +14,24 @@
   
   --font-lora: var(--font-lora);
   --font-zeyada: var(--font-zeyada);
+  
+  /* Light mode (default) */
+  --bg-primary: #F2EBDF;
+  --bg-secondary: rgba(255, 255, 255, 0.5);
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --accent: #726E97;
+  --border: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: rgba(0, 0, 0, 0.3);
+  --text-primary: #F2EBDF;
+  --text-secondary: #d4d4d4;
+  --accent: #9b96c9;
+  --border: rgba(242, 235, 223, 0.15);
+  --color-white: #F2EBDF;
 }
 
 html {
@@ -24,11 +42,12 @@ html {
 body {
   font-family: var(--font-lora), serif;
   font-weight: 400;
-  color: var(--color-black);
-  background-color: var(--color-white);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Typography */

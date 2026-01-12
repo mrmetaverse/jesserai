@@ -1,6 +1,12 @@
+'use client'
+
+import { useTheme } from '@/app/context/ThemeContext'
 import styles from './Hero.module.css'
 
 export default function Hero() {
+  const { theme } = useTheme()
+  const logoTextSrc = theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
+
   return (
     <section id="home" className={styles.hero}>
       <div className={styles.videoBackground}>
@@ -19,9 +25,9 @@ export default function Hero() {
       <div className={styles.content}>
         <h2 className={styles.subtitle}>Welcome to</h2>
         <div className={styles.logoContainer}>
-          <img src="/examplelogo1.png" alt="JesseRai" className={styles.heroLogo} />
+          <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.heroLogo} />
+          <img src={logoTextSrc} alt="JesseRai" className={styles.heroLogoText} />
         </div>
-        <h1 className={styles.title}>JesseRai</h1>
         <p className={styles.tagline}>
           Premium Hair Care in the Heart of Annapolis
         </p>

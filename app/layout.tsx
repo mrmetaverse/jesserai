@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Lora, Zeyada } from 'next/font/google'
+import { ThemeProvider } from './context/ThemeContext'
 import './globals.css'
 
 const lora = Lora({ 
@@ -28,7 +29,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${lora.variable} ${zeyada.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

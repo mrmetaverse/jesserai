@@ -1,11 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useTheme } from '@/app/context/ThemeContext'
+import ThemeToggle from './ThemeToggle'
 import styles from './Navigation.module.css'
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { theme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +26,8 @@ export default function Navigation() {
     }
   }
 
+  const logoTextSrc = theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
+
   return (
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
@@ -32,7 +37,7 @@ export default function Navigation() {
           aria-label="JesseRai Salon Home"
         >
           <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.logoImage} />
-          <h2>JesseRai</h2>
+          <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
         </button>
 
         <button 
@@ -76,6 +81,9 @@ export default function Navigation() {
             <button onClick={() => scrollToSection('contact')}>
               Contact
             </button>
+          </li>
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
       </div>

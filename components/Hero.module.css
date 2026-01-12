@@ -47,6 +47,16 @@
     rgba(114, 110, 151, 0.15) 100%
   );
   z-index: 1;
+  transition: background 0.3s ease;
+}
+
+[data-theme='dark'] .videoOverlay {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 26, 0.85) 0%,
+    rgba(26, 26, 26, 0.75) 50%,
+    rgba(114, 110, 151, 0.25) 100%
+  );
 }
 
 .content {
@@ -59,7 +69,7 @@
 
 .subtitle {
   margin-bottom: 0.5rem;
-  color: var(--color-lavender);
+  color: var(--accent);
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.2s forwards;
 }
@@ -77,18 +87,17 @@
   width: auto;
 }
 
-.title {
-  margin-bottom: 1rem;
-  color: var(--color-black);
-  opacity: 0;
-  animation: fadeIn 0.8s ease-out 0.4s forwards;
+.heroLogoText {
+  height: clamp(50px, 8vw, 90px);
+  width: auto;
+  margin-top: 1rem;
 }
 
 .tagline {
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   font-weight: 300;
   margin-bottom: 1.5rem;
-  color: var(--color-gray);
+  color: var(--text-secondary);
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.6s forwards;
 }
@@ -96,7 +105,7 @@
 .description {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   margin-bottom: 2.5rem;
-  color: var(--color-gray);
+  color: var(--text-secondary);
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.8s forwards;
 }
@@ -106,8 +115,8 @@
   padding: 1rem 2.5rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
   opacity: 0;
@@ -115,7 +124,8 @@
 }
 
 .cta:hover {
-  background-color: var(--color-lavender);
+  background-color: var(--accent);
+  color: var(--bg-primary);
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -127,7 +137,7 @@
   transform: translateX(-50%);
   width: 24px;
   height: 40px;
-  border: 2px solid var(--color-black);
+  border: 2px solid var(--text-primary);
   border-radius: 20px;
   opacity: 0.6;
   z-index: 2;
@@ -140,7 +150,7 @@
   transform: translateX(-50%);
   width: 4px;
   height: 8px;
-  background-color: var(--color-black);
+  background-color: var(--text-primary);
   border-radius: 2px;
   animation: scrollDown 2s infinite;
 }
