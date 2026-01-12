@@ -15,7 +15,7 @@ export default function About() {
             <p>
               Founded by Jessica Angell, a passionate stylist with years of experience, 
               JesseRai is built on the belief that everyone deserves to look and feel their best. 
-              We have taken over the beloved location formerly occupied by Raymond Salon near Harbor Center off Route 2.
+              We have taken over the beloved location formerly occupied by Raymond Salon at 108 Old Solomons Island Road.
             </p>
             <p>
               Our team is dedicated to creating a welcoming atmosphere where clients feel 

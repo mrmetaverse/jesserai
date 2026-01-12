@@ -13,8 +13,8 @@ export default function Contact() {
           <div className={styles.infoCard}>
             <h3>Location</h3>
             <p>
-              Off Route 2 near Harbor Center<br />
-              Annapolis, Maryland
+              108 Old Solomons Island Rd #L1<br />
+              Annapolis, MD 21401
             </p>
             <p className={styles.note}>
               Formerly Raymond Salon
