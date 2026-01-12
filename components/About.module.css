@@ -1,6 +1,7 @@
 .about {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, var(--color-white) 0%, rgba(114, 110, 151, 0.05) 100%);
+  background: linear-gradient(180deg, var(--bg-primary) 0%, rgba(114, 110, 151, 0.05) 100%);
+  transition: background 0.3s ease;
 }
 
 .container {
@@ -17,11 +18,11 @@
 .title {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .text {
-  color: var(--color-gray);
+  color: var(--text-secondary);
 }
 
 .text p {
@@ -31,7 +32,7 @@
 .text h4 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .text ul {
@@ -51,7 +52,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--color-lavender);
+  color: var(--accent);
   font-weight: 600;
   font-size: 1.25rem;
 }

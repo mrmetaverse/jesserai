@@ -1,6 +1,12 @@
 .contact {
   padding: 6rem 2rem;
-  background-color: var(--color-black);
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme='dark'] .contact {
+  background-color: #0d0d0d;
   color: var(--color-white);
 }
 

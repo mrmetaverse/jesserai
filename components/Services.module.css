@@ -1,6 +1,7 @@
 .services {
   padding: 6rem 2rem;
-  background-color: var(--color-white);
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
 }
 
 .container {
@@ -11,14 +12,14 @@
 .sectionTitle {
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-black);
+  color: var(--text-primary);
 }
 
 .intro {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 4rem;
-  color: var(--color-gray);
+  color: var(--text-secondary);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
 }
 
@@ -29,7 +30,7 @@
 .categoryTitle {
   text-align: center;
   margin-bottom: 2.5rem;
-  color: var(--color-lavender);
+  color: var(--accent);
   font-family: var(--font-zeyada), cursive;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
 }
@@ -41,8 +42,8 @@
 .subCategoryTitle {
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--color-black);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
 }
 
 .serviceGrid {
@@ -53,15 +54,15 @@
 
 .serviceCard {
   padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
 .serviceCard:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-color: var(--color-lavender);
+  box-shadow: 0 8px 20px var(--border);
+  border-color: var(--accent);
 }
 
 .serviceHeader {
@@ -74,20 +75,20 @@
 
 .serviceName {
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--text-primary);
   font-size: 1.05rem;
 }
 
 .servicePrice {
   font-weight: 600;
-  color: var(--color-lavender);
+  color: var(--accent);
   white-space: nowrap;
   font-size: 0.95rem;
 }
 
 .serviceDescription {
   margin: 0;
-  color: var(--color-gray);
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.6;
 }
