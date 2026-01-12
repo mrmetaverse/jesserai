@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import Contact from '@/components/Contact'
 import ContactForm from '@/components/ContactForm'
 import Map from '@/components/Map'
@@ -34,6 +35,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

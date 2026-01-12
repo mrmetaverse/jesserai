@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import ApplyForm from '@/components/ApplyForm'
 import Map from '@/components/Map'
 import styles from './apply.module.css'
@@ -81,6 +82,7 @@ export default function ApplyPage() {
           <ApplyForm />
         </div>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import styles from './photos.module.css'
 
 export default function PhotosPage() {
@@ -92,6 +93,7 @@ export default function PhotosPage() {
           </div>
         </div>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import About from '@/components/About'
 import Map from '@/components/Map'
 import styles from './about.module.css'
@@ -28,6 +29,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import styles from './team.module.css'
 
 const teamMembers = [
@@ -75,6 +76,7 @@ export default function TeamPage() {
           </div>
         </div>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

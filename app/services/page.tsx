@@ -2,6 +2,7 @@
 
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Chatbot from '@/components/Chatbot'
 import Services from '@/components/Services'
 import styles from './services.module.css'
 
@@ -18,6 +19,7 @@ export default function ServicesPage() {
         </div>
         <Services />
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

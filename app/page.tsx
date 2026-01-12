@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
 import Map from '@/components/Map'
+import Chatbot from '@/components/Chatbot'
 import Footer from '@/components/Footer'
 import styles from './home.module.css'
 
@@ -116,6 +117,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Chatbot />
       <Footer />
     </>
   )
