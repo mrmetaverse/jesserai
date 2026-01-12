@@ -25,7 +25,11 @@ export default function Footer() {
             <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.logoImage} />
             <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
           </Link>
-          <p>Annapolis, Maryland</p>
+          <div className={styles.address}>
+            <p>108 Old Solomons Island Rd #L1</p>
+            <p>Annapolis, MD 21401</p>
+            <p className={styles.formerly}>(Formerly Raymond Salon)</p>
+          </div>
         </div>
 
         <div className={styles.footerLinks}>

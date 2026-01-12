@@ -47,11 +47,23 @@
   filter: brightness(0) invert(1);
 }
 
-.brand p {
-  margin: 0;
+.address {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.address p {
+  margin: 0.25rem 0;
   color: currentColor;
   opacity: 0.7;
-  font-size: 1rem;
+  font-size: 0.95rem;
+}
+
+.formerly {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.5;
+  margin-top: 0.5rem;
 }
 
 .footerLinks {
