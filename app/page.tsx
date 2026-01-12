@@ -3,9 +3,40 @@
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
-import LogoComparison from '@/components/LogoComparison'
+import Map from '@/components/Map'
 import Footer from '@/components/Footer'
 import styles from './home.module.css'
+
+const primaryLinks = [
+  {
+    href: '/bookings',
+    icon: '📅',
+    title: 'Book Now',
+    description: 'Schedule your appointment online',
+    color: 'accent'
+  },
+  {
+    href: '/services',
+    icon: '✂️',
+    title: 'Our Services',
+    description: 'Hair, color, and nail services',
+    color: 'default'
+  },
+  {
+    href: '/photos',
+    icon: '📸',
+    title: 'Client Gallery',
+    description: 'Share with #jesseraisalon for $5 off',
+    color: 'default'
+  }
+]
+
+const secondaryLinks = [
+  { href: '/about', icon: '🏠', title: 'About', description: 'Our story' },
+  { href: '/team', icon: '👥', title: 'Our Team', description: 'Meet our stylists' },
+  { href: '/apply', icon: '💼', title: 'Careers', description: 'Join us' },
+  { href: '/contact', icon: '📞', title: 'Contact', description: 'Get in touch' },
+]
 
 export default function Home() {
   return (
@@ -17,52 +48,70 @@ export default function Home() {
       <main id="main">
         <Hero />
         
-        {/* Quick Links Section */}
-        <section className={styles.quickLinks}>
+        {/* Primary Actions */}
+        <section className={styles.primaryActions}>
           <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>Discover JesseRai</h2>
-            <div className={styles.linksGrid}>
-              <Link href="/services" className={styles.linkCard}>
-                <h3>Our Services</h3>
-                <p>Explore our full range of hair and nail care services</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/bookings" className={styles.linkCard}>
-                <h3>Book Now</h3>
-                <p>Schedule your appointment with us today</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/photos" className={styles.linkCard}>
-                <h3>Client Gallery</h3>
-                <p>See our work and share yours with #jesseraisalon for $5 off</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/about" className={styles.linkCard}>
-                <h3>About Us</h3>
-                <p>Learn more about our salon and our story</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/team" className={styles.linkCard}>
-                <h3>Our Team</h3>
-                <p>Meet the talented professionals behind JesseRai</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/apply" className={styles.linkCard}>
-                <h3>Join Our Team</h3>
-                <p>Explore career opportunities with us</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
-              
-              <Link href="/contact" className={styles.linkCard}>
-                <h3>Contact</h3>
-                <p>Get in touch with us - we would love to hear from you</p>
-                <span className={styles.arrow}>→</span>
-              </Link>
+            <h2 className={styles.sectionTitle}>Get Started</h2>
+            <div className={styles.primaryGrid}>
+              {primaryLinks.map((link, index) => (
+                <Link 
+                  key={index} 
+                  href={link.href} 
+                  className={`${styles.primaryCard} ${link.color === 'accent' ? styles.accentCard : ''}`}
+                >
+                  <span className={styles.cardIcon}>{link.icon}</span>
+                  <h3>{link.title}</h3>
+                  <p>{link.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Location Section */}
+        <section className={styles.locationSection}>
+          <div className={styles.container}>
+            <h2 className={styles.sectionTitle}>Visit Us in Annapolis</h2>
+            <p className={styles.locationText}>
+              108 Old Solomons Island Rd #L1, Annapolis, MD 21401
+            </p>
+            <div className={styles.locationGrid}>
+              <div className={styles.hours}>
+                <h3>Hours</h3>
+                <div className={styles.hoursList}>
+                  <div className={styles.hourRow}>
+                    <span>Tuesday - Friday</span>
+                    <span>9am - 7pm</span>
+                  </div>
+                  <div className={styles.hourRow}>
+                    <span>Saturday</span>
+                    <span>9am - 5pm</span>
+                  </div>
+                  <div className={styles.hourRow}>
+                    <span>Sunday - Monday</span>
+                    <span>Closed</span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.mapWrapper}>
+                <Map />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Secondary Links */}
+        <section className={styles.secondaryLinks}>
+          <div className={styles.container}>
+            <h2 className={styles.sectionTitle}>Explore More</h2>
+            <div className={styles.secondaryGrid}>
+              {secondaryLinks.map((link, index) => (
+                <Link key={index} href={link.href} className={styles.secondaryCard}>
+                  <span className={styles.secondaryIcon}>{link.icon}</span>
+                  <h4>{link.title}</h4>
+                  <p>{link.description}</p>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
