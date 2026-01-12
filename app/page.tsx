@@ -42,11 +42,8 @@ const secondaryLinks = [
 export default function Home() {
   return (
     <>
-      <a href="#main" className="skip-to-content">
-        Skip to main content
-      </a>
       <Navigation />
-      <main id="main">
+      <main>
         <Hero />
         
         {/* Primary Actions */}
