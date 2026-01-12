@@ -53,6 +53,11 @@ export default function Navigation() {
             </button>
           </li>
           <li>
+            <a href="/bookings">
+              Book Now
+            </a>
+          </li>
+          <li>
             <button onClick={() => scrollToSection('about')}>
               About
             </button>

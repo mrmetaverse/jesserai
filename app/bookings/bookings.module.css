@@ -1,0 +1,41 @@
+.bookingsPage {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-white) 0%, rgba(114, 110, 151, 0.08) 100%);
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.subtitle {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: var(--color-gray);
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .bookingsPage {
+    padding-top: 60px;
+  }
+
+  .hero {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+}
