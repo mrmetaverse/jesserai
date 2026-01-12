@@ -57,6 +57,16 @@ export default function Navigation() {
             </button>
           </li>
           <li>
+            <a href="/team">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a href="/apply">
+              Apply Now
+            </a>
+          </li>
+          <li>
             <button onClick={() => scrollToSection('contact')}>
               Contact
             </button>
