@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { useTheme } from '@/app/context/ThemeContext'
 import ThemeToggle from './ThemeToggle'
 import styles from './Navigation.module.css'
@@ -33,13 +34,13 @@ export default function Navigation() {
   return (
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
-        <a 
+        <Link 
           href="/"
           className={styles.logo}
           aria-label="JesseRai Salon Home"
         >
           <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
-        </a>
+        </Link>
 
         <button 
           className={styles.mobileMenuButton}
@@ -54,34 +55,34 @@ export default function Navigation() {
 
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.open : ''}`}>
           <li>
-            <a href="/services">
+            <Link href="/services">
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/bookings">
+            <Link href="/bookings">
               Book Now
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about">
+            <Link href="/about">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/team">
+            <Link href="/team">
               Our Team
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/apply">
+            <Link href="/apply">
               Apply Now
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact">
+            <Link href="/contact">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
             <ThemeToggle />

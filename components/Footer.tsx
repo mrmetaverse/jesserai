@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { useTheme } from '@/app/context/ThemeContext'
 import styles from './Footer.module.css'
 
@@ -19,27 +20,27 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.brand}>
-          <a href="/">
+          <Link href="/">
             <img src="/examplelogo1.png" alt="JesseRai Logo" className={styles.logoImage} />
             <img src={logoTextSrc} alt="JesseRai" className={styles.logoText} />
-          </a>
+          </Link>
           <p>Annapolis, Maryland</p>
         </div>
 
         <div className={styles.footerLinks}>
           <div className={styles.linkSection}>
             <h4>Salon</h4>
-            <a href="/services">Services</a>
-            <a href="/bookings">Book Appointment</a>
-            <a href="/about">About Us</a>
-            <a href="/team">Our Team</a>
+            <Link href="/services">Services</Link>
+            <Link href="/bookings">Book Appointment</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/team">Our Team</Link>
           </div>
 
           <div className={styles.linkSection}>
             <h4>Company</h4>
-            <a href="/apply">Careers</a>
-            <a href="/contact">Contact</a>
-            <a href="/press">Press</a>
+            <Link href="/apply">Careers</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/press">Press</Link>
           </div>
 
           <div className={styles.linkSection}>
