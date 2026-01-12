@@ -114,19 +114,26 @@ button {
   }
 }
 
-/* Skip to content link for screen readers */
+/* Skip to content link for screen readers - only visible on keyboard focus */
 .skip-to-content {
   position: absolute;
-  left: -9999px;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
   z-index: 999;
   padding: 1em;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--accent);
+  color: var(--bg-primary);
   text-decoration: none;
 }
 
 .skip-to-content:focus {
+  position: fixed;
   left: 50%;
-  transform: translateX(-50%);
   top: 1em;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
 }
