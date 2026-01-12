@@ -5,17 +5,22 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #000000;
+  color: #FFFFFF;
   font-size: 1.75rem;
   border: none;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
+}
+
+[data-theme='dark'] .chatButton {
+  background-color: var(--color-lavender);
 }
 
 .chatButton:hover {
@@ -33,14 +38,20 @@
   right: 2rem;
   width: 380px;
   height: 550px;
-  background-color: var(--color-white);
+  background-color: #F2EBDF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  z-index: 999;
+  z-index: 9998;
   overflow: hidden;
+  pointer-events: auto;
+}
+
+[data-theme='dark'] .chatWindow {
+  background-color: #2a2a2a;
+  border-color: rgba(242, 235, 223, 0.2);
 }
 
 .chatHeader {
