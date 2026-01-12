@@ -23,6 +23,22 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover .logoImage {
+  opacity: 0.8;
+}
+
 .logo h2 {
   margin: 0;
   color: var(--color-black);

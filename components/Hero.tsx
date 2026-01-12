@@ -18,6 +18,9 @@ export default function Hero() {
       </div>
       <div className={styles.content}>
         <h2 className={styles.subtitle}>Welcome to</h2>
+        <div className={styles.logoContainer}>
+          <img src="/examplelogo1.png" alt="JesseRai" className={styles.heroLogo} />
+        </div>
         <h1 className={styles.title}>JesseRai</h1>
         <p className={styles.tagline}>
           Premium Hair Care in the Heart of Annapolis

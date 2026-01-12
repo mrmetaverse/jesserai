@@ -7,6 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.brand}>
+          <img src="/examplelogo2.png" alt="JesseRai Logo" className={styles.logoImage} />
           <h2>JesseRai</h2>
           <p>Annapolis, Maryland</p>
         </div>

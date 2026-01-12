@@ -1,0 +1,100 @@
+.comparison {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, rgba(114, 110, 151, 0.05) 0%, var(--color-white) 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.note {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: var(--color-gray);
+  font-size: 1.05rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.option {
+  text-align: center;
+}
+
+.preview {
+  padding: 3rem 2rem;
+  background-color: var(--color-white);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.preview:hover {
+  border-color: var(--color-lavender);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoBox img {
+  height: 100px;
+  width: auto;
+}
+
+.logoBox h2 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.inverted {
+  filter: brightness(0) invert(1);
+  background-color: var(--color-black);
+  padding: 1rem;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.usage {
+  color: var(--color-gray);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .comparison {
+    padding: 3rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .preview {
+    padding: 2rem 1rem;
+  }
+}
