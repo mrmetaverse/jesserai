@@ -42,8 +42,8 @@
   width: auto;
 }
 
-[data-theme='light'] .logoImage,
-[data-theme='light'] .logoText {
+/* Icon needs inversion in dark mode to stay visible */
+[data-theme='dark'] .logoImage {
   filter: brightness(0) invert(1);
 }
 

@@ -14,7 +14,8 @@ export default function Footer() {
     setMounted(true)
   }, [])
 
-  const logoTextSrc = mounted && theme === 'dark' ? '/examplelogotextwhite1.png' : '/examplelogotextblack1.png'
+  // Footer has dark background, so we use white text in light mode and black text in dark mode (inverted)
+  const logoTextSrc = mounted && theme === 'dark' ? '/examplelogotextblack1.png' : '/examplelogotextwhite1.png'
 
   return (
     <footer className={styles.footer}>
